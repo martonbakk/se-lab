@@ -39,11 +39,11 @@ public class TorpedoStore {
     double r = random.nextDouble();
 
     if (r >= FAILURE_RATE) {
-      // successful firing
+      // successful
       this.torpedoCount -= numberOfTorpedos;
       success = true;
     } else {
-      // simulated failure
+      // failure
       success = false;
     }
 
